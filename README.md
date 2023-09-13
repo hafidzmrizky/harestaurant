@@ -1,30 +1,29 @@
-# Haresturant
+# Haresturant - A PHP and Bootstrap Restaurant Website
 
-This is a restaurant website created by Hafidz Muhammad Rizky XI RPL using PHP and Bootstrap.
+**Created by:** Hafidz Muhammad Rizky  
+**Class:** XI RPL  
+**Date of submit:** September 13, 2023
+
+## Description
+
+Haresturant is a simple restaurant website created using PHP and Bootstrap. This website allows users to view the restaurant's menu, add items to their cart, and place orders. It provides a seamless and user-friendly experience for both customers and restaurant staff.
 
 ## Features
 
-- Responsive design
-- Shopping cart
-- User registration and login
-- Admin panel
+- User-friendly interface with a clean and responsive design.
+- Display of the restaurant's menu with prices and descriptions.
+- Cart functionality to add and remove items.
+- Ability to place orders and receive confirmation.
+- Session management for a secure and glitch-free user experience.
 
-## Installation
+## Why Use Session in Cart?
 
-1. Clone the repository.
-2. Import the `database.sql` file to your MySQL server.
-3. Update the database credentials in `config.php`.
-4. Run the website on your local server.
+### Security
 
-## Usage
+Session management is crucial in ensuring the security of user data and preventing unauthorized access or tampering. In the context of a restaurant website like Haresturant, here are some reasons why using sessions in the cart is essential for security:
 
-1. Register as a user or login to your account.
-2. Browse the menu and add items to your cart.
-3. Checkout and complete your order.
+1. **Data Integrity:** Storing cart data in sessions on the server-side makes it much more difficult for users to manipulate their cart contents or prices by altering client-side data. This helps prevent users from exploiting vulnerabilities in the website to get discounts or add items for free.
 
-## Why use session in cart?
+3. **Data Confidentiality:** Sessions provide a secure way to store sensitive information such as the user's cart contents. Unlike cookies, which are stored on the client-side and can be manipulated, sessions are stored on the server and are not accessible to the user.
 
-Session and cookies are both used to store data on the client side, but session data is stored on the server side, while cookies are stored on the client side [^1^][1]. Session data is more secure because it cannot be accessed or modified by the user [^2^][2]. In addition, session data is easier to integrate into your application because it is automatically managed by PHP [^2^][2]. 
-
-In the context of a shopping cart, session data is used to store information about the items that have been added to the cart [^3^][3]. This information is then used to calculate the total cost of the order and to display a summary of the order to the user [^3^][3]. By using session data, you can ensure that the user cannot modify the contents of their cart outside of the current development scope [^3^][3].
-
+In conclusion, using sessions in the cart of Haresturant provides a higher level of security and simplifies the development and maintenance of the website. It ensures that users have a secure and glitch-free experience while interacting with the restaurant's online ordering system.
