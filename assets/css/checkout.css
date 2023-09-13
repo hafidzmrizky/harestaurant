@@ -1,0 +1,28 @@
+
+.checkout {
+    margin: 1rem;
+}
+
+.ringkasan {
+    width: 95%;
+}
+
+
+.check {
+    width: 100%;
+}
+
+@media screen and (min-width: 1020px) {
+    .check {
+        width: 50%;
+    }
+
+
+    .checkout {
+        margin: 1rem 4rem;
+    }
+
+    .ringkasan {
+        width: 85%;
+    }
+}
